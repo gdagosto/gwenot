@@ -13,7 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.1/socket.io.js"></script>
     <script>
         const ip = window.prompt('Insira o ip para conectar');
-        var socket = io(`http://${ip}`);
+        var socket = io(`https://${ip}`);
         socket.on('you-connected', function (msg) {
             alert(`Ado ado ado um viado (você) conectou! (id: ${msg})`);
         });
